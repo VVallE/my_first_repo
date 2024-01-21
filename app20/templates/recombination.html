@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рекомбінатор</title>
+</head>
+<body>
+    <div class="card">
+        <form method="post">
+            <label for="word">Введіть слово для рекомбінації</label>
+            <input type="text" name="word" id="word" required>
+            <br>
+            <button type="submit">Рекомбінувати!</button>
+        </form>
+        {% if result %}
+            <p class="resultbox">Результат: <span>{{result}}</span></p>
+        {% endif %}
+    </div>
+</body>
+</html>
